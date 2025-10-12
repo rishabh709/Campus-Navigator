@@ -1,3 +1,23 @@
+### 🔄 Sync Before You Code (IMPORTANT)
+
+Before starting any new work:
+
+1. Open your terminal in VS Code  
+2. Switch to the correct branch (usually `develop`):
+
+    ```bash
+    git checkout develop
+    ```
+
+3. Pull the latest changes from the remote repository:
+
+    ```bash
+    git pull origin develop
+    ```
+
+4. Start making your changes  
+
+
 # Commit Message Basic Structure:
 ```
 <type>[optional scope]: <description>
