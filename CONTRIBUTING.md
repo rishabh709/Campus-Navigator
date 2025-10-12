@@ -1,4 +1,16 @@
-### 🔄 Sync Before You Code (IMPORTANT)
+# Initial Setup 
+Starting from scratch, follow these steps to set up local repository:
+1. clone the repository
+
+    ```bash
+    git clone https://github.com/rishabh709/Campus-Navigator.git
+    ```
+2. Set your repo as the correct origin
+    ```bash
+    git remote set-url origin https://github.com/rishabh709/Campus-Navigator.git
+    ```
+
+# Developement Workflow (IMPORTANT)
 
 Before starting any new work:
 
@@ -16,6 +28,34 @@ Before starting any new work:
     ```
 
 4. Start making your changes  
+5. Stage changes for commit:
+
+    To stage a specific file:
+
+    ```bash
+    git add <filename>
+    ```
+
+    To stage all changed files:
+
+    ```bash
+    git add .
+    ```
+6. Commit your changes with a meaningful message:
+
+    ```bash
+    git commit -m "type(scope): short description"
+    ```
+
+    > Example:  
+    > `git commit -m "docs(contributing): add syncing workflow section"`
+
+7. Push your commits to the remote branch:
+
+    ```bash
+    git push origin develop
+    ```
+
 
 
 # Commit Message Basic Structure:
