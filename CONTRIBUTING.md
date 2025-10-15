@@ -29,10 +29,10 @@ A simple step-by-step guide to help you get started:
    Comment on the issue or assign it to yourself to let others know you’re working on it. You(Contributors) can assign it to yourself by clicking on Assign yourself option under the Assignees in top right corner of the issue.
    
 3. Open your terminal in VS Code  
-4. Switch to the correct branch (usually `develop`):
+4. create correct branch as per the issue:
 
     ```bash
-    git checkout develop
+    git checkout -b feature/<feature-name>
     ```
 
 5. Pull the latest changes from the remote repository:
@@ -69,8 +69,13 @@ A simple step-by-step guide to help you get started:
 9. Push your commits to the remote branch:
 
     ```bash
-    git push origin develop
+    git push origin main
     ```
+10. Create a pull request 
+    1. Go to your github forked repo of the project
+    2. Click on contribute -> Open pull request
+    3. Add appropriate title and description (mention What and why but not how changes are made?)
+    4. Request reviewer
 
 
 
