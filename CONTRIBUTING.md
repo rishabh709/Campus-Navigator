@@ -11,7 +11,7 @@ Starting from scratch, follow these steps to set up local repository:
     ```
 3. Fork the main repo
     1. Go to the github repo https://github.com/rishabh709/Campus-Navigator.git and click on fork
-    2. Copy or forked repo looking like (https://github.com/<username>/Campus-Navigator.git)
+    2. Copy or forked repo looking like `(https://github.com/<username>/Campus-Navigator.git)`
     3. go to vs code terminal
     ```bash
     git remote set-url origin  https://github.com/rishabh709/Campus-Navigator.git
