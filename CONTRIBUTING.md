@@ -1,21 +1,77 @@
-### 🔄 Sync Before You Code (IMPORTANT)
+# Initial Setup 
+Starting from scratch, follow these steps to set up local repository:
+1. clone the repository
 
-Before starting any new work:
+    ```bash
+    git clone https://github.com/rishabh709/Campus-Navigator.git
+    ```
+2. Set your repo as the correct origin
+    ```bash
+    git remote add upstream https://github.com/rishabh709/Campus-Navigator.git
+    ```
+3. Fork the main repo
+    1. Go to the github repo https://github.com/rishabh709/Campus-Navigator.git and click on fork
+    2. Copy or forked repo looking like (https://github.com/<username>/Campus-Navigator.git)
+    3. go to vs code terminal
+    ```bash
+    git remote set-url origin  https://github.com/rishabh709/Campus-Navigator.git
+    ```
 
-1. Open your terminal in VS Code  
-2. Switch to the correct branch (usually `develop`):
+
+# How to Contribute
+
+A simple step-by-step guide to help you get started:
+
+1. **Find an Issue**  
+   Browse the [Issues](https://github.com/rishabh709/Campus-Navigator/issues) page to find tasks you want to work on. Look for labels and its description.
+
+2. **Claim the Issue**  
+   Comment on the issue or assign it to yourself to let others know you’re working on it. You(Contributors) can assign it to yourself by clicking on Assign yourself option under the Assignees in top right corner of the issue.
+   
+3. Open your terminal in VS Code  
+4. Switch to the correct branch (usually `develop`):
 
     ```bash
     git checkout develop
     ```
 
-3. Pull the latest changes from the remote repository:
+5. Pull the latest changes from the remote repository:
 
     ```bash
     git pull origin develop
     ```
 
-4. Start making your changes  
+6. Start making your changes  
+7. Test your Changes
+
+8. Stage changes for commit:
+
+    To stage a specific file:
+
+    ```bash
+    git add <filename>
+    ```
+
+    To stage all changed files:
+
+    ```bash
+    git add .
+    ```
+9. Commit your changes with a meaningful message:
+
+    ```bash
+    git commit -m "type(scope): short description"
+    ```
+
+    > Example:  
+    > `git commit -m "docs(contributing): add syncing workflow section"`
+
+9. Push your commits to the remote branch:
+
+    ```bash
+    git push origin develop
+    ```
+
 
 
 # Commit Message Basic Structure:
