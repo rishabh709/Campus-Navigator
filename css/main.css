@@ -1,0 +1,15 @@
+:root {
+    --primary-color: #6CE170;
+    --background-color: #46BD4A;
+    --font-main: "Oxygen", sans-serif;
+    --text-color: #000;
+
+    --highligh-bg-color: #F8FB3A;
+
+
+    /* font colors */
+    --font-color: #292B38;
+
+    /* Gradient */
+    --logo-gradient: linear-gradient(171.39deg, #D4D4D4 15.29%, #F8C428 116.45%);
+}
