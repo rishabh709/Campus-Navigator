@@ -9,7 +9,12 @@
 
     /* font colors */
     --font-color: #292B38;
-
+    --font-color-white: #ffffff;
     /* Gradient */
     --logo-gradient: linear-gradient(171.39deg, #D4D4D4 15.29%, #F8C428 116.45%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
 }
