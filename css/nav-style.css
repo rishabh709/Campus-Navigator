@@ -1,0 +1,91 @@
+.nav{
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+    padding: 4px;
+    width: 100vw;
+    /* background: transparent; */
+}
+.nav{
+    /* border: 1px red solid;   just for overview */
+    
+    
+}
+
+.nav .logo{
+    font-family:oxygen;
+    font-size:28px;
+    font-weight: bold;
+    color: black;
+    align-self: center;
+    display: flex;
+    gap:5px;
+
+
+}
+
+.nav .logo .lgim{
+    display: flex;
+}
+.nav .logo .lgim img{
+    align-self: center;
+    height: 40px;
+    
+}
+.nav .logo .lgcn{
+    /* font-size: 30px; */
+    align-self: center;
+}
+
+.nav .search{
+     align-self: center;
+     
+
+}
+.nav .search input{ 
+    font-family: inter;
+    Border: 1px solid #E9E9E9;
+    border-radius: 100px;
+    padding: 5px;
+    padding-left:15px;
+    width: 380px;
+    height: 35px;
+    align-self: center;
+    justify-self: center;
+   
+
+    background: url('/assets/images/icons/search-icon.svg') no-repeat right 8px center;
+    
+    background-size: 12px;
+    background-color:#D9D9D940;
+    
+
+}
+.nav .search input:focus{
+    border-color: #007BFF;
+}
+
+.nav a{
+    text-decoration: none;
+    font-family:Kodchasan;
+    /* font-weight: bold; */
+    font-weight:500 ;
+
+}
+.nav .contact {
+    background-color:var(--highligh-bg-color);
+    padding: 8px;
+    width: 110px;
+    /* height: 40px; */
+    
+    text-align: center;
+
+}
+.logo .lgim img{
+
+}
+.logo{
+    font-family:oxyzen ;
+    
+}
