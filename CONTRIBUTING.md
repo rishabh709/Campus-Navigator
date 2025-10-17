@@ -16,6 +16,14 @@ Starting from scratch, follow these steps to set up local repository:
     ```bash
     git remote set-url origin  https://github.com/rishabh709/Campus-Navigator.git
     ```
+    ```bash
+    git remote add upstream https://github.com/rishabh709/Campus-Navigator.git
+    ```
+4. Create local develop branch
+    ```bash
+    git checkout -b branch
+    push origin main
+    ```
 4. **Set `develop` as the default branch for PRs** on GitHub:
     - Go to your repo → Settings → Branches → Default branch → set to `develop`.
 
@@ -30,65 +38,94 @@ A simple step-by-step guide to help you get started:
 2. **Claim the Issue**  
    Comment on the issue or assign it to yourself to let others know you’re working on it. You(Contributors) can assign it to yourself by clicking on Assign yourself option under the Assignees in top right corner of the issue.
    
-3. Open your terminal in VS Code  
+### 1. Fork the repository (as mentioned in Initial Setup)
+
+- Contributor forks the owner’s repo on GitHub.
+    
+- Their fork has the same branches: `main` and `develop`.
+    
+
+---
+
+### 2. Sync fork regularly
+
+- Fetch from upstream:
+    
+    ```bash
+    git fetch upstream
     ```
-    git fetch origin
+    
+- Sync `develop` branch (usually contributors base their work off `develop`):
+    
+    ```bash
     git checkout develop
+    git reset --hard upstream/develop
+    git push origin develop --force  # only if needed
     ```
-4. Pull the latest changes from the remote repository:
-
+    
+- Also, keep `main` synced if you want:
+    
     ```bash
-    git pull origin develop
+    git checkout main
+    git reset --hard upstream/main
+    git push origin main --force  # only if needed
     ```
-5. create correct branch as per the issue:
+    
 
+---
+
+### 3. Create a feature branch off `develop`
+
+- Create a new branch for your work (feature or bugfix):
+    
     ```bash
-    git checkout -b feature/<feature-name>
+    git checkout develop
+    git pull upstream develop      # make sure it’s up-to-date
+    git checkout -b feature/my-new-feature
     ```
-
-
-6. Start making your changes  
-7. Test your Changes
-
-8. Stage changes for commit:
-
-    To stage a specific file:
-
-    ```bash
-    git add <filename>
-    ```
-
-    To stage all changed files:
-
+    
+- Do your work, commit changes:
+    
     ```bash
     git add .
+    git commit -m "feat(): Add new feature"
     ```
-9. Commit your changes with a meaningful message:
-
+    
+- Push your feature branch to your fork:
+    
     ```bash
-    git commit -m "type(scope): short description"
+    git push origin feature/my-new-feature
     ```
+    
 
-    > Example:  
-    > `git commit -m "feat(nav-bar): create nav bar"`
+---
 
-9. Push your commits to the remote branch:
+### 4. Open a Pull Request (PR)
 
+- Go to **GitHub** on your fork.
+    
+- Open a PR **from your feature branch** (e.g., `feature/my-new-feature`) **into the owner repo’s `develop` branch** (or whichever branch owner wants).
+    
+- Make sure PR targets `develop` branch if that’s where ongoing development happens.
+    
+
+---
+
+### 5. After PR is merged or closed
+
+- If merged, you can delete your feature branch both locally and remotely:
+    
     ```bash
-    git push -u origin feature/<feature-name>
+    git branch -d feature/my-new-feature
+    git push origin --delete feature/my-new-feature
     ```
+    
+- If closed or discarded, delete feature branch as above.
+    
+- Sync your fork’s `develop` and `main` as needed.
+    
 
-10. Create the Pull Request on GitHub: 
-    1. Go to your github forked repo of the project
-    2. Click on contribute -> Open pull request
-    3. When opening a PR, GitHub will ask:
-        - “Compare” branch: This should be feature/nav-bar (their branch).
-        - “Base” branch: This should be develop (the branch they want to merge into).
-        - They must choose develop as the base branch explicitly if it’s not pre-selected.
-
-    4. Add appropriate title and description (mention What and why but not how changes are made?)
-    5. Request reviewer
-
+</br>
 
 
 # Commit Message Basic Structure:
