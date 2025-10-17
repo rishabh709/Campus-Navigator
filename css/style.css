@@ -10,9 +10,10 @@ body{
 }
 .call2action{
     position: absolute;
-    width: 300px;
+    /* width: 300px; */
+    width: 19.53125vw;
     height: 70px;
-    margin-top: 40%;
+    margin-top: 71vh;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -25,12 +26,13 @@ body{
     border-radius: 7px;
 }
 .leftbox-hs{
+    width: 50vw;
     justify-content: center;
     align-items: center;
 }
 .tagline-hs{
-    padding-right: 30% ;
-    padding-left: 16%;
+    /* padding-right: 29% ; */
+    /* padding-left: 16%; */
     font-family: Lato;
     text-align: center;
     color: var(--font-color);
@@ -41,24 +43,29 @@ body{
 }
 .tagline-hs > span{
     font-weight: bold;
-    font-size: 48px;
+    /* font-size: 48px; */
+    font-size: 3.140vw;
 }
 .rightbox-hs{
-    /* width: 53%; */
+    width: 57.5vw;
     /* background-color: var(--background-color); */
     background: url(./../assets/images/other/bg-curve.svg);
+    background-size: cover;
 }
 .rightbox-hs > img{
     width: 24.3vw;
 }
 .logo-hs{
+    width: 100%;
     height: 92.7%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.logo-hs > img {
+    height: 53.9dvh;
+}
 .leftbox-hs, .rightbox-hs{
-    width: 50%;
     display: flex;
     justify-content: center;
     /* flex: none; */
