@@ -4,15 +4,29 @@
     justify-content: space-around;
     align-items: center;
     padding: 4px;
-    width: 100vw;
+    /* width: 100vw; */
     /* background: transparent; */
 }
 .nav{
     /* border: 1px red solid;   just for overview */
-    
+    position:fixed;
+    width: 100vw;
     
 }
-
+.nav > * {
+    text-align: center;
+    width: 30%;
+}
+.right-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px;
+    font-family: Kodchasan;
+    font-weight: normal;
+    
+}
 .nav .logo{
     font-family:oxygen;
     font-size:28px;
@@ -23,6 +37,10 @@
     gap:5px;
 
 
+}
+
+input::placeholder{
+    color: rgb(0, 0, 0, 0.3);
 }
 
 .nav .logo .lgim{
@@ -49,11 +67,14 @@
     border-radius: 100px;
     padding: 5px;
     padding-left:15px;
-    width: 380px;
+    /* width: 380px; */
+    width: -webkit-fill-available;
     height: 35px;
     align-self: center;
     justify-self: center;
    
+    overflow: hidden;
+    text-overflow: ellipsis; 
 
     background: url('/assets/images/icons/search-icon.svg') no-repeat right 8px center;
     
@@ -68,9 +89,9 @@
 
 .nav a{
     text-decoration: none;
-    font-family:Kodchasan;
+    /* font-family:Kodchasan; */
     /* font-weight: bold; */
-    font-weight:500 ;
+    /* font-weight:500 ; */
 
 }
 .nav .contact {
@@ -82,9 +103,7 @@
     text-align: center;
 
 }
-.logo .lgim img{
 
-}
 .logo{
     font-family:oxyzen ;
     
