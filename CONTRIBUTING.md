@@ -1,5 +1,6 @@
 # Initial Setup 
 Starting from scratch, follow these steps to set up local repository:
+0. go to terminal
 1. clone the repository
 
     ```bash
