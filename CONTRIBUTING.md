@@ -22,7 +22,7 @@ Starting from scratch, follow these steps to set up local repository:
 4. Create local develop branch
     ```bash
     git checkout -b develop
-    push origin main
+    git push origin main
     ```
 4. **Set `develop` as the default branch for PRs** on GitHub:
     - Go to your repo → Settings → Branches → Default branch → set to `develop`.
