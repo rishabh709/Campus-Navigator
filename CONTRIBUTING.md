@@ -1,17 +1,17 @@
 # Initial Setup 
 Starting from scratch, follow these steps to set up local repository:
 
-0. go to terminal
-1. clone the repository
+1. go to terminal
+2. clone the repository
 
     ```bash
     git clone https://github.com/rishabh709/Campus-Navigator.git
     ```
-2. Set your repo as the correct origin
+3. Set your repo as the correct origin
     ```bash
     git remote add upstream https://github.com/rishabh709/Campus-Navigator.git
     ```
-3. Fork the main repo
+4. Fork the main repo
     1. Go to the github repo https://github.com/rishabh709/Campus-Navigator.git and click on fork
     2. Copy or forked repo looking like `(https://github.com/<username>/Campus-Navigator.git)`
     3. go to vs code terminal
@@ -21,12 +21,12 @@ Starting from scratch, follow these steps to set up local repository:
     ```bash
     git remote add upstream https://github.com/rishabh709/Campus-Navigator.git
     ```
-4. Create local develop branch
+5. Create local develop branch
     ```bash
     git checkout -b branch
     push origin main
     ```
-4. **Set `develop` as the default branch for PRs** on GitHub:
+6. **Set `develop` as the default branch for PRs** on GitHub:
     - Go to your repo → Settings → Branches → Default branch → set to `develop`.
 
 
