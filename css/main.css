@@ -10,6 +10,8 @@
     /* font colors */
     --font-color: #292B38;
     --font-color-white: #ffffff;
+    --font-subtext-color: #292B3880;
+    
     /* Gradient */
     --logo-gradient: linear-gradient(171.39deg, #D4D4D4 15.29%, #F8C428 116.45%);
 }
