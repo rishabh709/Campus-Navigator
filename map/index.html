@@ -7,11 +7,31 @@
 </head>
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="../css/fonts.css">
+<link rel="stylesheet" href="../css/main.css">
 
 <body>
     <div class="container">
         <div class="map"></div>
-        <div class="overlay"></div>
+        <div class="overlay">
+            <div class="search-box">
+                <div class="dots">
+                    <span class="dot"></span>
+                    <div class="line"></div>
+                    <span class="dot"></span>
+                </div>
+                <div class="search-bars">
+                    <div>
+                        <div class="subtext">Source address</div>
+                        <input type="text" name="curr-location" id="curr-location" placeholder="Current Location">
+                    </div>
+                    <div>
+                        <div class="subtext">Destination address</div>
+                        <input type="text" name="dest-location" id="dest-location" placeholder="Search Destination">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
     </div>
 </body>
 </html>
