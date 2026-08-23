@@ -1,0 +1,3158 @@
+{
+  "type": "FeatureCollection",
+  "name": "roads",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "151939982",
+        "name": null,
+        "highway": "footway",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": "\"footway\"=>\"sidewalk\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5321177,
+            17.9840917
+          ],
+          [
+            79.5316541,
+            17.9840816
+          ],
+          [
+            79.5311772,
+            17.9840716
+          ],
+          [
+            79.5310054,
+            17.9840708
+          ],
+          [
+            79.5309672,
+            17.9840703
+          ],
+          [
+            79.5308732,
+            17.9840692
+          ],
+          [
+            79.5306803,
+            17.9840665
+          ],
+          [
+            79.5306472,
+            17.9840665
+          ],
+          [
+            79.5306212,
+            17.9840663
+          ],
+          [
+            79.5305955,
+            17.9840665
+          ],
+          [
+            79.53044,
+            17.9840675
+          ],
+          [
+            79.5295919,
+            17.9840538
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "151939984",
+        "name": null,
+        "highway": "unclassified",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5306707,
+            17.9882851
+          ],
+          [
+            79.5306778,
+            17.9881287
+          ],
+          [
+            79.5307011,
+            17.9874871
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "151939986",
+        "name": null,
+        "highway": "unclassified",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5311385,
+            17.9851409
+          ],
+          [
+            79.5316086,
+            17.9847569
+          ],
+          [
+            79.5319964,
+            17.9843874
+          ],
+          [
+            79.5321177,
+            17.9840917
+          ],
+          [
+            79.532136,
+            17.9833589
+          ],
+          [
+            79.5321465,
+            17.9825252
+          ],
+          [
+            79.5321547,
+            17.9822566
+          ],
+          [
+            79.5321553,
+            17.9816691
+          ],
+          [
+            79.5321532,
+            17.9813901
+          ],
+          [
+            79.5319003,
+            17.9812101
+          ],
+          [
+            79.5317808,
+            17.9811787
+          ],
+          [
+            79.531172,
+            17.9811683
+          ],
+          [
+            79.5309176,
+            17.9811605
+          ],
+          [
+            79.5306093,
+            17.9811623
+          ],
+          [
+            79.5301568,
+            17.981187
+          ],
+          [
+            79.5297504,
+            17.9813125
+          ],
+          [
+            79.5296862,
+            17.9813672
+          ],
+          [
+            79.5296676,
+            17.9818269
+          ],
+          [
+            79.5296456,
+            17.9825557
+          ],
+          [
+            79.5296138,
+            17.9834734
+          ],
+          [
+            79.5295919,
+            17.9840538
+          ],
+          [
+            79.5295899,
+            17.9842036
+          ],
+          [
+            79.5296033,
+            17.984296
+          ],
+          [
+            79.5296861,
+            17.9844312
+          ],
+          [
+            79.5298413,
+            17.984589
+          ],
+          [
+            79.5300154,
+            17.984741
+          ],
+          [
+            79.530308,
+            17.9849764
+          ],
+          [
+            79.5304316,
+            17.9850823
+          ],
+          [
+            79.5305176,
+            17.9851823
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "197764030",
+        "name": "Jogging Path",
+        "highway": "path",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": "\"bicycle\"=>\"yes\",\"foot\"=>\"yes\",\"horse\"=>\"no\",\"incline\"=>\"0%\",\"lit\"=>\"yes\",\"motor_vehicle\"=>\"no\",\"surface\"=>\"earth\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5334192,
+            17.980988
+          ],
+          [
+            79.5334355,
+            17.9801657
+          ],
+          [
+            79.5333714,
+            17.9800305
+          ],
+          [
+            79.5333003,
+            17.9799512
+          ],
+          [
+            79.5332013,
+            17.9798864
+          ],
+          [
+            79.5330936,
+            17.9798459
+          ],
+          [
+            79.5329992,
+            17.9798531
+          ],
+          [
+            79.5329174,
+            17.9798814
+          ],
+          [
+            79.5328407,
+            17.979925
+          ],
+          [
+            79.5327697,
+            17.9799709
+          ],
+          [
+            79.53274,
+            17.9800417
+          ],
+          [
+            79.5327038,
+            17.9801033
+          ],
+          [
+            79.5326777,
+            17.9801855
+          ],
+          [
+            79.5326533,
+            17.98085
+          ],
+          [
+            79.5326526,
+            17.9809417
+          ],
+          [
+            79.5326665,
+            17.9810384
+          ],
+          [
+            79.5326756,
+            17.981095
+          ],
+          [
+            79.5327106,
+            17.9811585
+          ],
+          [
+            79.5327549,
+            17.9812084
+          ],
+          [
+            79.5328198,
+            17.9812499
+          ],
+          [
+            79.532897,
+            17.9812804
+          ],
+          [
+            79.5329664,
+            17.9813031
+          ],
+          [
+            79.5330426,
+            17.9813115
+          ],
+          [
+            79.5331101,
+            17.9813011
+          ],
+          [
+            79.5331675,
+            17.9812877
+          ],
+          [
+            79.5332381,
+            17.9812542
+          ],
+          [
+            79.5333231,
+            17.9811746
+          ],
+          [
+            79.5333817,
+            17.9811083
+          ],
+          [
+            79.5334192,
+            17.980988
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "235446304",
+        "name": null,
+        "highway": "residential",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5272549,
+            17.9858331
+          ],
+          [
+            79.5282928,
+            17.9863421
+          ],
+          [
+            79.5288921,
+            17.9866357
+          ],
+          [
+            79.5306353,
+            17.9874234
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "235446309",
+        "name": null,
+        "highway": "unclassified",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5336738,
+            17.9822803
+          ],
+          [
+            79.5321547,
+            17.9822566
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "235446314",
+        "name": null,
+        "highway": "unclassified",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5331316,
+            17.9865467
+          ],
+          [
+            79.5325009,
+            17.9865406
+          ],
+          [
+            79.5319446,
+            17.9865293
+          ],
+          [
+            79.5307316,
+            17.9865225
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "235446319",
+        "name": null,
+        "highway": "service",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5346728,
+            17.985891
+          ],
+          [
+            79.5348836,
+            17.9841797
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "235446331",
+        "name": null,
+        "highway": "footway",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5352237,
+            17.9820747
+          ],
+          [
+            79.5351475,
+            17.982043
+          ],
+          [
+            79.5348744,
+            17.9820037
+          ],
+          [
+            79.5342658,
+            17.9819261
+          ],
+          [
+            79.5340643,
+            17.9818992
+          ],
+          [
+            79.5340152,
+            17.9819156
+          ],
+          [
+            79.5339936,
+            17.981945
+          ],
+          [
+            79.5339349,
+            17.9824211
+          ],
+          [
+            79.5338601,
+            17.9830239
+          ],
+          [
+            79.5338424,
+            17.9831828
+          ],
+          [
+            79.5338461,
+            17.9832268
+          ],
+          [
+            79.5338935,
+            17.9832489
+          ],
+          [
+            79.5342095,
+            17.983279
+          ],
+          [
+            79.5342698,
+            17.9832817
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "235446334",
+        "name": null,
+        "highway": "unclassified",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5350095,
+            17.9841861
+          ],
+          [
+            79.5351104,
+            17.9833743
+          ],
+          [
+            79.5351818,
+            17.9828361
+          ],
+          [
+            79.535252,
+            17.9821501
+          ],
+          [
+            79.5352237,
+            17.9820747
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "235446340",
+        "name": "Food Street",
+        "highway": "unclassified",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5321177,
+            17.9840917
+          ],
+          [
+            79.5334058,
+            17.9841363
+          ],
+          [
+            79.5336906,
+            17.9841445
+          ],
+          [
+            79.5348836,
+            17.9841797
+          ],
+          [
+            79.5350095,
+            17.9841861
+          ],
+          [
+            79.5365308,
+            17.9841993
+          ],
+          [
+            79.5365957,
+            17.9841634
+          ],
+          [
+            79.5366322,
+            17.9841006
+          ],
+          [
+            79.536744,
+            17.9831198
+          ],
+          [
+            79.536716,
+            17.9830455
+          ],
+          [
+            79.5366587,
+            17.9830145
+          ],
+          [
+            79.5351818,
+            17.9828361
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "280057890",
+        "name": null,
+        "highway": "residential",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5296862,
+            17.9813672
+          ],
+          [
+            79.5294883,
+            17.9808138
+          ],
+          [
+            79.5293296,
+            17.9803698
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "280057938",
+        "name": null,
+        "highway": "residential",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5304327,
+            17.9798251
+          ],
+          [
+            79.5309921,
+            17.9796796
+          ],
+          [
+            79.5323403,
+            17.9792741
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "280058045",
+        "name": null,
+        "highway": "residential",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5291384,
+            17.9804281
+          ],
+          [
+            79.5293296,
+            17.9803698
+          ],
+          [
+            79.5304832,
+            17.9800064
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "280058130",
+        "name": null,
+        "highway": "residential",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5309176,
+            17.9811605
+          ],
+          [
+            79.5306476,
+            17.9804552
+          ],
+          [
+            79.5305755,
+            17.9802582
+          ],
+          [
+            79.5304832,
+            17.9800064
+          ],
+          [
+            79.5304327,
+            17.9798251
+          ],
+          [
+            79.5303497,
+            17.9795428
+          ],
+          [
+            79.5302381,
+            17.9792683
+          ],
+          [
+            79.5302081,
+            17.9792338
+          ],
+          [
+            79.5301555,
+            17.9792256
+          ],
+          [
+            79.528577,
+            17.9797384
+          ],
+          [
+            79.5285484,
+            17.979787
+          ],
+          [
+            79.5285454,
+            17.9798453
+          ],
+          [
+            79.5286554,
+            17.9801671
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "280058227",
+        "name": null,
+        "highway": "residential",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5288921,
+            17.9866357
+          ],
+          [
+            79.530308,
+            17.9849764
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "280058228",
+        "name": null,
+        "highway": "residential",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.52661,
+            17.9848266
+          ],
+          [
+            79.5268181,
+            17.9849231
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "280058229",
+        "name": null,
+        "highway": "residential",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5276816,
+            17.9843055
+          ],
+          [
+            79.5275297,
+            17.9843195
+          ],
+          [
+            79.5273832,
+            17.9843539
+          ],
+          [
+            79.5272458,
+            17.9844075
+          ],
+          [
+            79.526979,
+            17.9846342
+          ],
+          [
+            79.5268991,
+            17.9847373
+          ],
+          [
+            79.5268181,
+            17.9849231
+          ],
+          [
+            79.5275577,
+            17.985266
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "280058232",
+        "name": null,
+        "highway": "residential",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5282928,
+            17.9863421
+          ],
+          [
+            79.5289496,
+            17.9855995
+          ],
+          [
+            79.5294071,
+            17.9850854
+          ],
+          [
+            79.5298413,
+            17.984589
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "280058241",
+        "name": null,
+        "highway": "residential",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5267473,
+            17.9868328
+          ],
+          [
+            79.5268075,
+            17.9867142
+          ],
+          [
+            79.5268673,
+            17.9865965
+          ],
+          [
+            79.5272549,
+            17.9858331
+          ],
+          [
+            79.5275577,
+            17.985266
+          ],
+          [
+            79.527698,
+            17.9849966
+          ],
+          [
+            79.5280099,
+            17.9843978
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "334879402",
+        "name": null,
+        "highway": "residential",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5301568,
+            17.981187
+          ],
+          [
+            79.5299873,
+            17.9806595
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "360991776",
+        "name": "NITW Power House",
+        "highway": null,
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": "\"operator\"=>\"NIT Warangal\",\"operator:type\"=>\"university\",\"power\"=>\"substation\",\"substation\"=>\"minor_distribution\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5313324,
+            17.9810704
+          ],
+          [
+            79.5314085,
+            17.9810774
+          ],
+          [
+            79.53142,
+            17.980966
+          ],
+          [
+            79.5313439,
+            17.980959
+          ],
+          [
+            79.5313324,
+            17.9810704
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "414320998",
+        "name": null,
+        "highway": "footway",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": "\"footway\"=>\"sidewalk\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5300154,
+            17.984741
+          ],
+          [
+            79.5304978,
+            17.9847424
+          ],
+          [
+            79.5305975,
+            17.9847426
+          ],
+          [
+            79.5307707,
+            17.984746
+          ],
+          [
+            79.5311605,
+            17.9847467
+          ],
+          [
+            79.5316086,
+            17.9847569
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "414322196",
+        "name": null,
+        "highway": "service",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5310256,
+            17.9874417
+          ],
+          [
+            79.5310268,
+            17.9872283
+          ],
+          [
+            79.5310232,
+            17.9871961
+          ],
+          [
+            79.5310088,
+            17.9871665
+          ],
+          [
+            79.5309817,
+            17.987133
+          ],
+          [
+            79.5309707,
+            17.9870906
+          ],
+          [
+            79.5309707,
+            17.9870549
+          ],
+          [
+            79.5309841,
+            17.9870128
+          ],
+          [
+            79.5310189,
+            17.9869759
+          ],
+          [
+            79.5311208,
+            17.9869313
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "414322197",
+        "name": null,
+        "highway": "service",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5329611,
+            17.9873631
+          ],
+          [
+            79.5336189,
+            17.9875269
+          ],
+          [
+            79.5337334,
+            17.9875377
+          ],
+          [
+            79.5338556,
+            17.9875362
+          ],
+          [
+            79.5339292,
+            17.9875109
+          ],
+          [
+            79.5340224,
+            17.9874089
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "414330836",
+        "name": null,
+        "highway": "residential",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5296676,
+            17.9818269
+          ],
+          [
+            79.5306101,
+            17.9818151
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "414330837",
+        "name": null,
+        "highway": "service",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5321393,
+            17.9808525
+          ],
+          [
+            79.5326533,
+            17.98085
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "414330838",
+        "name": null,
+        "highway": "residential",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5321465,
+            17.9825252
+          ],
+          [
+            79.5311568,
+            17.9825382
+          ],
+          [
+            79.531172,
+            17.9811683
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "414330839",
+        "name": null,
+        "highway": "residential",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5296456,
+            17.9825557
+          ],
+          [
+            79.5306055,
+            17.9825426
+          ],
+          [
+            79.5306101,
+            17.9818151
+          ],
+          [
+            79.5306093,
+            17.9811623
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "414330841",
+        "name": null,
+        "highway": "residential",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5321532,
+            17.9813901
+          ],
+          [
+            79.5321393,
+            17.9808525
+          ],
+          [
+            79.5321262,
+            17.9805829
+          ],
+          [
+            79.5321576,
+            17.9797571
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "418935203",
+        "name": null,
+        "highway": "residential",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.527698,
+            17.9849966
+          ],
+          [
+            79.5289496,
+            17.9855995
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "418935206",
+        "name": null,
+        "highway": "unclassified",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5319446,
+            17.9865293
+          ],
+          [
+            79.5319604,
+            17.9858956
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "469538080",
+        "name": null,
+        "highway": "unclassified",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5305176,
+            17.9851823
+          ],
+          [
+            79.5306052,
+            17.9853582
+          ],
+          [
+            79.5307432,
+            17.9856921
+          ],
+          [
+            79.5307838,
+            17.9855863
+          ],
+          [
+            79.5308194,
+            17.9854907
+          ],
+          [
+            79.5309195,
+            17.9853457
+          ],
+          [
+            79.5310342,
+            17.9852309
+          ],
+          [
+            79.5311385,
+            17.9851409
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "469538083",
+        "name": null,
+        "highway": "footway",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": "\"footway\"=>\"sidewalk\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5311772,
+            17.9840716
+          ],
+          [
+            79.531166,
+            17.9844216
+          ],
+          [
+            79.5311617,
+            17.9846328
+          ],
+          [
+            79.5311605,
+            17.9847467
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "469538085",
+        "name": null,
+        "highway": "footway",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": "\"footway\"=>\"sidewalk\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5307775,
+            17.9844196
+          ],
+          [
+            79.5308642,
+            17.9844193
+          ],
+          [
+            79.5308689,
+            17.9842332
+          ],
+          [
+            79.5306762,
+            17.9842319
+          ],
+          [
+            79.530672,
+            17.9844173
+          ],
+          [
+            79.5307775,
+            17.9844196
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "469538086",
+        "name": null,
+        "highway": "footway",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": "\"footway\"=>\"sidewalk\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5306762,
+            17.9842319
+          ],
+          [
+            79.5306781,
+            17.9841565
+          ],
+          [
+            79.5306803,
+            17.9840665
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "469538087",
+        "name": null,
+        "highway": "footway",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": "\"footway\"=>\"sidewalk\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5308689,
+            17.9842332
+          ],
+          [
+            79.530871,
+            17.984159
+          ],
+          [
+            79.5308732,
+            17.9840692
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "469538090",
+        "name": null,
+        "highway": "footway",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": "\"footway\"=>\"sidewalk\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5308642,
+            17.9844193
+          ],
+          [
+            79.531166,
+            17.9844216
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "469538097",
+        "name": null,
+        "highway": "unclassified",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5307903,
+            17.9874339
+          ],
+          [
+            79.5310256,
+            17.9874417
+          ],
+          [
+            79.5327141,
+            17.9874733
+          ],
+          [
+            79.5328656,
+            17.9874375
+          ],
+          [
+            79.5329611,
+            17.9873631
+          ],
+          [
+            79.5330276,
+            17.9872745
+          ],
+          [
+            79.5330708,
+            17.9871548
+          ],
+          [
+            79.5331316,
+            17.9865467
+          ],
+          [
+            79.5332441,
+            17.9855578
+          ],
+          [
+            79.5333429,
+            17.9846894
+          ],
+          [
+            79.5334058,
+            17.9841363
+          ],
+          [
+            79.5334319,
+            17.9839428
+          ],
+          [
+            79.5335042,
+            17.9833944
+          ],
+          [
+            79.5335623,
+            17.9829924
+          ],
+          [
+            79.5336528,
+            17.9824019
+          ],
+          [
+            79.5336738,
+            17.9822803
+          ],
+          [
+            79.5338968,
+            17.9810834
+          ],
+          [
+            79.5339896,
+            17.9804893
+          ],
+          [
+            79.5339795,
+            17.9803465
+          ],
+          [
+            79.5339341,
+            17.9802317
+          ],
+          [
+            79.5332321,
+            17.979591
+          ],
+          [
+            79.5330628,
+            17.9795314
+          ],
+          [
+            79.5329589,
+            17.9795371
+          ],
+          [
+            79.5324443,
+            17.979667
+          ],
+          [
+            79.5323403,
+            17.9792741
+          ],
+          [
+            79.5321285,
+            17.9785591
+          ],
+          [
+            79.5321091,
+            17.9785123
+          ],
+          [
+            79.5320582,
+            17.9784767
+          ],
+          [
+            79.5319962,
+            17.978479
+          ],
+          [
+            79.5305885,
+            17.9789213
+          ],
+          [
+            79.5304557,
+            17.9789966
+          ],
+          [
+            79.5303989,
+            17.9790588
+          ],
+          [
+            79.5303485,
+            17.9791615
+          ],
+          [
+            79.5303497,
+            17.9795428
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "469538101",
+        "name": null,
+        "highway": "unclassified",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5307096,
+            17.9873337
+          ],
+          [
+            79.5307316,
+            17.9865225
+          ],
+          [
+            79.5307432,
+            17.9856921
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "469538110",
+        "name": null,
+        "highway": "footway",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": "\"footway\"=>\"sidewalk\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5337512,
+            17.9836517
+          ],
+          [
+            79.5340931,
+            17.9834093
+          ],
+          [
+            79.5341578,
+            17.9833562
+          ],
+          [
+            79.5342095,
+            17.983279
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "469538112",
+        "name": null,
+        "highway": "footway",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5345238,
+            17.9830832
+          ],
+          [
+            79.5345287,
+            17.9833151
+          ],
+          [
+            79.5345224,
+            17.9834243
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "469538114",
+        "name": null,
+        "highway": "footway",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5335623,
+            17.9829924
+          ],
+          [
+            79.5338601,
+            17.9830239
+          ],
+          [
+            79.5342805,
+            17.9830707
+          ],
+          [
+            79.5345238,
+            17.9830832
+          ],
+          [
+            79.5348592,
+            17.9830943
+          ],
+          [
+            79.5349535,
+            17.9830367
+          ],
+          [
+            79.5350511,
+            17.9829022
+          ],
+          [
+            79.5350716,
+            17.9828519
+          ],
+          [
+            79.5350752,
+            17.9828217
+          ],
+          [
+            79.5350814,
+            17.9827388
+          ],
+          [
+            79.5350713,
+            17.9826619
+          ],
+          [
+            79.5350174,
+            17.9825979
+          ],
+          [
+            79.5349231,
+            17.9825114
+          ],
+          [
+            79.5348727,
+            17.982496
+          ],
+          [
+            79.534847,
+            17.9824729
+          ],
+          [
+            79.5348425,
+            17.9824319
+          ],
+          [
+            79.5348659,
+            17.9820725
+          ],
+          [
+            79.5348744,
+            17.9820037
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "469538116",
+        "name": null,
+        "highway": "footway",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5350752,
+            17.9828217
+          ],
+          [
+            79.5351818,
+            17.9828361
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "469538119",
+        "name": null,
+        "highway": "residential",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5305755,
+            17.9802582
+          ],
+          [
+            79.5321576,
+            17.9797571
+          ],
+          [
+            79.5324443,
+            17.979667
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "469538120",
+        "name": null,
+        "highway": "residential",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5294883,
+            17.9808138
+          ],
+          [
+            79.5299873,
+            17.9806595
+          ],
+          [
+            79.5306476,
+            17.9804552
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "469558875",
+        "name": null,
+        "highway": "service",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": "\"service\"=>\"parking_aisle\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5335042,
+            17.9833944
+          ],
+          [
+            79.5331236,
+            17.983383
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "827559995",
+        "name": null,
+        "highway": "footway",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": "\"footway\"=>\"sidewalk\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5337512,
+            17.9836517
+          ],
+          [
+            79.5334319,
+            17.9839428
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "827559996",
+        "name": null,
+        "highway": "footway",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5342658,
+            17.9819261
+          ],
+          [
+            79.5342159,
+            17.9823544
+          ],
+          [
+            79.5342029,
+            17.9823964
+          ],
+          [
+            79.5341473,
+            17.9824268
+          ],
+          [
+            79.5339349,
+            17.9824211
+          ],
+          [
+            79.5336528,
+            17.9824019
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "879502787",
+        "name": null,
+        "highway": "unclassified",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5325133,
+            17.9859408
+          ],
+          [
+            79.5325009,
+            17.9865406
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "879502792",
+        "name": null,
+        "highway": "residential",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5311568,
+            17.9825382
+          ],
+          [
+            79.5306055,
+            17.9825426
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "879507784",
+        "name": null,
+        "highway": "unclassified",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": "\"oneway\"=>\"yes\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5306707,
+            17.9882851
+          ],
+          [
+            79.5306165,
+            17.9883097
+          ],
+          [
+            79.5305796,
+            17.9883457
+          ],
+          [
+            79.5305543,
+            17.9883751
+          ],
+          [
+            79.5305021,
+            17.9884605
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "879507785",
+        "name": null,
+        "highway": "unclassified",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": "\"oneway\"=>\"yes\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5307351,
+            17.9885656
+          ],
+          [
+            79.5307467,
+            17.9884292
+          ],
+          [
+            79.5307406,
+            17.9883882
+          ],
+          [
+            79.5307267,
+            17.9883574
+          ],
+          [
+            79.5306707,
+            17.9882851
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "879507786",
+        "name": null,
+        "highway": "residential",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5276816,
+            17.9843055
+          ],
+          [
+            79.5278336,
+            17.9843323
+          ],
+          [
+            79.5280099,
+            17.9843978
+          ],
+          [
+            79.5294071,
+            17.9850854
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "879549930",
+        "name": null,
+        "highway": "footway",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5344356,
+            17.9833117
+          ],
+          [
+            79.5345287,
+            17.9833151
+          ],
+          [
+            79.5351104,
+            17.9833743
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "879549931",
+        "name": null,
+        "highway": "service",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": "\"junction\"=>\"roundabout\",\"motor_vehicle\"=>\"no\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5344356,
+            17.9833117
+          ],
+          [
+            79.5344362,
+            17.9832892
+          ],
+          [
+            79.5344275,
+            17.9832635
+          ],
+          [
+            79.5344105,
+            17.983242
+          ],
+          [
+            79.5343869,
+            17.983227
+          ],
+          [
+            79.5343595,
+            17.9832201
+          ],
+          [
+            79.5343319,
+            17.9832221
+          ],
+          [
+            79.5343064,
+            17.9832324
+          ],
+          [
+            79.5342858,
+            17.9832499
+          ],
+          [
+            79.5342698,
+            17.9832817
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "879549932",
+        "name": null,
+        "highway": "service",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": "\"junction\"=>\"roundabout\",\"motor_vehicle\"=>\"no\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5342698,
+            17.9832817
+          ],
+          [
+            79.5342694,
+            17.983318
+          ],
+          [
+            79.534283,
+            17.9833482
+          ],
+          [
+            79.5343026,
+            17.9833668
+          ],
+          [
+            79.5343274,
+            17.9833783
+          ],
+          [
+            79.5343556,
+            17.9833817
+          ],
+          [
+            79.5343833,
+            17.9833761
+          ],
+          [
+            79.5344075,
+            17.9833621
+          ],
+          [
+            79.5344256,
+            17.9833414
+          ],
+          [
+            79.5344356,
+            17.9833117
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "879549933",
+        "name": null,
+        "highway": "service",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": "\"service\"=>\"parking_aisle\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5324444,
+            17.9833664
+          ],
+          [
+            79.532136,
+            17.9833589
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "879549934",
+        "name": null,
+        "highway": "service",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": "\"covered\"=>\"yes\",\"service\"=>\"parking_aisle\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5331236,
+            17.983383
+          ],
+          [
+            79.5324444,
+            17.9833664
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "879575624",
+        "name": null,
+        "highway": "service",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5296138,
+            17.9834734
+          ],
+          [
+            79.5293876,
+            17.9836384
+          ],
+          [
+            79.5293648,
+            17.9836658
+          ],
+          [
+            79.5293487,
+            17.9837016
+          ],
+          [
+            79.5293239,
+            17.9838125
+          ],
+          [
+            79.5293069,
+            17.9841848
+          ],
+          [
+            79.5296033,
+            17.984296
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "879575625",
+        "name": null,
+        "highway": "service",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5289293,
+            17.9838086
+          ],
+          [
+            79.5293239,
+            17.9838125
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "976401775",
+        "name": null,
+        "highway": "service",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": "\"service\"=>\"parking_aisle\",\"surface\"=>\"paved\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5306778,
+            17.9881287
+          ],
+          [
+            79.5305056,
+            17.9881071
+          ],
+          [
+            79.530374,
+            17.9880506
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "1015032887",
+        "name": null,
+        "highway": "service",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.533436,
+            17.9859129
+          ],
+          [
+            79.533473,
+            17.9855797
+          ],
+          [
+            79.5335146,
+            17.9852041
+          ],
+          [
+            79.5335348,
+            17.9850372
+          ],
+          [
+            79.5335712,
+            17.984714
+          ],
+          [
+            79.5336079,
+            17.9843886
+          ],
+          [
+            79.5336562,
+            17.9843388
+          ],
+          [
+            79.5345894,
+            17.9844266
+          ],
+          [
+            79.5346332,
+            17.9844754
+          ],
+          [
+            79.5346512,
+            17.9845736
+          ],
+          [
+            79.534584,
+            17.9851457
+          ],
+          [
+            79.5345646,
+            17.9853113
+          ],
+          [
+            79.5344811,
+            17.9860223
+          ],
+          [
+            79.533436,
+            17.9859129
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "1015032888",
+        "name": null,
+        "highway": "service",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5335146,
+            17.9852041
+          ],
+          [
+            79.5345646,
+            17.9853113
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "1015032889",
+        "name": null,
+        "highway": "service",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5335348,
+            17.9850372
+          ],
+          [
+            79.534584,
+            17.9851457
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "1015032890",
+        "name": null,
+        "highway": "footway",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": "\"footway\"=>\"sidewalk\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.530672,
+            17.9844173
+          ],
+          [
+            79.5305935,
+            17.9844173
+          ],
+          [
+            79.5305442,
+            17.9844222
+          ],
+          [
+            79.530515,
+            17.9844414
+          ],
+          [
+            79.5305001,
+            17.9844683
+          ],
+          [
+            79.5304978,
+            17.9847424
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "1015032892",
+        "name": null,
+        "highway": "footway",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": "\"footway\"=>\"sidewalk\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5306781,
+            17.9841565
+          ],
+          [
+            79.530871,
+            17.984159
+          ],
+          [
+            79.5309672,
+            17.9840703
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "1015032893",
+        "name": null,
+        "highway": "footway",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": "\"footway\"=>\"sidewalk\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5306781,
+            17.9841565
+          ],
+          [
+            79.5305955,
+            17.9840665
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "1015032894",
+        "name": null,
+        "highway": "residential",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 3,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5306445,
+            17.9874476
+          ],
+          [
+            79.5306616,
+            17.9874675
+          ],
+          [
+            79.5306847,
+            17.9874808
+          ],
+          [
+            79.5307011,
+            17.9874871
+          ],
+          [
+            79.5307367,
+            17.9874831
+          ],
+          [
+            79.5307599,
+            17.9874726
+          ],
+          [
+            79.5307784,
+            17.9874556
+          ],
+          [
+            79.5307903,
+            17.9874339
+          ],
+          [
+            79.5307944,
+            17.9874098
+          ],
+          [
+            79.5307902,
+            17.9873856
+          ],
+          [
+            79.5307783,
+            17.987364
+          ],
+          [
+            79.5307597,
+            17.9873471
+          ],
+          [
+            79.5307365,
+            17.9873366
+          ],
+          [
+            79.5307096,
+            17.9873337
+          ],
+          [
+            79.5306833,
+            17.9873395
+          ],
+          [
+            79.5306605,
+            17.9873532
+          ],
+          [
+            79.5306437,
+            17.9873734
+          ],
+          [
+            79.530635,
+            17.9873977
+          ],
+          [
+            79.5306353,
+            17.9874234
+          ],
+          [
+            79.5306445,
+            17.9874476
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "1015032896",
+        "name": null,
+        "highway": "service",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.533473,
+            17.9855797
+          ],
+          [
+            79.5332441,
+            17.9855578
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "1015032897",
+        "name": null,
+        "highway": "service",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": null
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5335712,
+            17.984714
+          ],
+          [
+            79.5333429,
+            17.9846894
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_id": "1015200914",
+        "name": null,
+        "highway": "footway",
+        "waterway": null,
+        "aerialway": null,
+        "barrier": null,
+        "man_made": null,
+        "railway": null,
+        "z_order": 0,
+        "other_tags": "\"footway\"=>\"sidewalk\""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.5307432,
+            17.9856921
+          ],
+          [
+            79.5307707,
+            17.984746
+          ],
+          [
+            79.5307775,
+            17.9844196
+          ]
+        ]
+      }
+    }
+  ]
+}

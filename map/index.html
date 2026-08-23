@@ -1,45 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Map</title>
-</head>
-<link rel="stylesheet" href="./css/style.css">
-<link rel="stylesheet" href="../css/fonts.css">
-<link rel="stylesheet" href="../css/main.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/ol@v10.1.0/ol.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/ol@v10.1.0/dist/ol.js"></script>
+    <script src="https://unpkg.com/ol-mapbox-style@12.1.1/dist/olms.js"></script>
+    <style>
+      #map {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
 
-<body>
+      #infobox h3 {
+        color: #6ce170;
+      }
+      .add-event {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+        background-color: red;
+        width: 50px;
+        aspect-ratio: 1 / 1;
+        font-size: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30%;
+        background: #6ce170;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(3px);
+        font-weight: bold;
+        /* Note: backdrop-filter has minimal browser support */
+        width: 70px;
+        aspect-ratio: 1 / 1;
+        border-radius: 75px;
+      }
+    </style>
+  </head>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="../css/fonts.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+
+  <body>
     <div class="container">
-        <div class="map"></div>
-        <div class="overlay">
-            <div class="search-box">
-                <div class="dots">
-                    <span class="dot"></span>
-                    <div class="line"></div>
-                    <span class="dot"></span>
-                </div>
-                <div class="search-bars">
-                    <div>
-                        <div class="subtext">Source address</div>
-                        <input type="text" name="curr-location" id="curr-location" placeholder="Current Location">
-                    </div>
-                    <div>
-                        <div class="subtext">Destination address</div>
-                        <input type="text" name="dest-location" id="dest-location" placeholder="Search Destination">
-                    </div>
-                </div>
-                
+      <div
+        id="infoBox"
+        style="
+          position: absolute;
+          bottom: 20px;
+          left: 20px;
+          background: white;
+          padding: 20px 10px;
+          border-radius: 10px;
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+          display: none;
+          z-index: 999;
+          font-family: Oxygen;
+        "
+      ></div>
+
+      <div id="map"></div>
+      <div class="overlay">
+        <div class="search-box">
+          <div class="dots">
+            <span class="dot"></span>
+            <div class="line"></div>
+            <span class="dot"></span>
+          </div>
+          <div class="search-bars">
+            <div>
+              <div class="subtext">Source address</div>
+              <input
+                type="text"
+                name="curr-location"
+                id="startLocation"
+                placeholder="Current Location"
+              />
             </div>
+            <div>
+              <div class="subtext">Destination address</div>
+              <input
+                type="text"
+                name="dest-location"
+                id="destinationLocation"
+                placeholder="Search Destination"
+              />
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="options">
-        <div class="icons" id=""  ><img src="./assets/icons/car.svg" alt="" onclick=""></div>
-        <div class="icons" id=""  ><img src="./assets/icons/cart.svg" alt="" onclick=""></div>
-        <div class="icons" id=""  ><img src="./assets/icons/drinks.svg" alt="" onclick=""></div>
-        <div class="icons" id=""  ><img src="./assets/icons/food.svg" alt="" onclick=""></div>
-        <div class="icons" id="options"><img src="./assets/icons/options-snack-bar.svg" alt="" onclick=""></div>
+    <div
+      id="navConfirmBox"
+      style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+        z-index: 99999;
+        display: none;
+        width: 280px;
+        text-align: center;
+        font-family: Oxygen;
+      "
+    >
+      <h3 style="color: #46bd4a; margin-top: 0">Start Navigation?</h3>
+      <p>Would you like to begin turn-by-turn navigation?</p>
+      <button
+        id="navStartBtn"
+        style="
+          background: #46bd4a;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          margin: 5px;
+        "
+      >
+        Yes
+      </button>
+      <button
+        id="navCancelBtn"
+        style="
+          background: #ccc;
+          color: black;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 8px;
+          cursor: pointer;
+          margin: 5px;
+        "
+      >
+        Cancel
+      </button>
     </div>
+    <div class="floating-options-bar">
+      <div class="options collapsible-options">
+        <div class="icons" id="hostel">
+          <img src="./icons/hostel.svg" alt="" onclick="" />
+        </div>
+        <div class="icons" id="academic">
+          <img src="./icons/academic.svg" alt="" onclick="" />
+        </div>
+        <div class="icons" id="library">
+          <img src="./icons/library.svg" alt="" onclick="" />
+        </div>
+        <div class="icons" id="shop">
+          <img src="./assets/icons/cart.svg" alt="" onclick="" />
+        </div>
+        <div class="icons" id="cafe">
+          <img src="./icons/cafe.svg" alt="" onclick="" />
+        </div>
+        <div class="icons" id="restaurant">
+          <img src="./icons/restaurant.svg" alt="" onclick="" />
+        </div>
+        <div class="icons" id="options">
+          <img src="./assets/icons/options-snack-bar.svg" alt="" onclick="" />
+        </div>
+      </div>
+      <div class="options">
+        <div class="icons" id="sharelocation">
+          <img src="./icons/share.svg" alt="" srcset="" />
+        </div>
+        <div class="icons" id="livetrack">
+          <img src="./icons/live.svg" alt="" srcset="" />
+        </div>
+      </div>
+    </div>
+    <!-- Share Location Modal -->
+    <div
+      id="shareLocationModal"
+      style="
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+        z-index: 99999;
+        display: none;
+        width: 90%;
+        max-width: 350px;
+        font-family: Oxygen;
+      "
+    >
+      <h3 style="color: #46bd4a; margin-top: 0; text-align: center">
+        Share Live Location
+      </h3>
+      <p style="text-align: center; color: #666; font-size: 14px">
+        Allow others to see your live location on the map.
+      </p>
+
+      <div style="margin: 20px 0">
+        <label
+          style="
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+          "
+          >Duration (minutes)</label
+        >
+        <input
+          id="shareDurationInput"
+          type="number"
+          min="1"
+          max="240"
+          value="30"
+          style="
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+          "
+        />
+        <small style="display: block; margin-top: 5px; color: #999"
+          >Share will expire after this time.</small
+        >
+      </div>
+
+      <div
+        style="
+          margin: 20px 0;
+          padding: 10px;
+          background: #f0f9f7;
+          border-radius: 6px;
+          display: none;
+        "
+        id="shareLinkBox"
+      >
+        <label
+          style="
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+          "
+          >Share Link</label
+        >
+        <div style="display: flex; gap: 8px">
+          <input
+            id="shareLinkInput"
+            type="text"
+            readonly
+            style="
+              flex: 1;
+              padding: 10px;
+              border: 1px solid #ddd;
+              border-radius: 6px;
+              font-size: 12px;
+              background: white;
+            "
+          />
+          <button
+            id="copyShareLinkBtn"
+            style="
+              padding: 10px 15px;
+              background: #46bd4a;
+              color: white;
+              border: none;
+              border-radius: 6px;
+              cursor: pointer;
+              font-weight: 600;
+            "
+          >
+            Copy
+          </button>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 10px; margin-top: 20px">
+        <button
+          id="generateShareBtn"
+          style="
+            flex: 1;
+            padding: 12px;
+            background: #46bd4a;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+          "
+        >
+          Generate & Start Sharing
+        </button>
+        <button
+          id="closeShareModalBtn"
+          style="
+            flex: 1;
+            padding: 12px;
+            background: #ccc;
+            color: #333;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+          "
+        >
+          Close
+        </button>
+      </div>
+    </div>
+    <div id="contextMenu" class="context-menu" style="display: none">
+      <ul>
+        <li id="addEvent"><a href="#" >Add location</a></li>
+        <li><a href="#">Share location</a></li>
+      </ul>
+    </div>
+    <!-- <div class="add-event" id="addEvent">+</div> -->
+    <script src="https://cdn.socket.io/4.8.0/socket.io.min.js"></script>
+    <script src="./map-main.js"></script>
+    <script src="./share-module.js"></script>
+    <script src="./navigation-module.js"></script>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
+<style>
+  #navBox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 260px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    font-family: Oxygen;
+    max-height: 60vh;
+    overflow-y: auto;
+    z-index: 9999;
+    display: none;
+  }
+  #navBox h3 {
+    margin-top: 0;
+    color: #46bd4a;
+  }
+</style>
+
+<div id="navBox"></div>
+
+<!-- Navigation module moved to navigation-module.js -->

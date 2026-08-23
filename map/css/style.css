@@ -3,6 +3,7 @@ body > * {
     box-sizing: border-box;
 }
 .container{
+    background-color: red;
     width: 100vw;
     height: 100vh;
 }
@@ -20,7 +21,7 @@ body > * {
     justify-content: center;
     background-color: #F1F4F3;
 }
-.search-box{
+.search-box, .context-menu{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.7);
     box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.15);
@@ -31,6 +32,39 @@ body > * {
 
     display: flex;
     gap: 2%;
+}
+.context-menu{
+    max-width: 200px;
+    padding: 1% 2%;
+    z-index: 10000;
+}
+.context-menu ul{
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.context-menu ul li a{
+    text-decoration: none;
+    color: var(--font-color);
+    font-family: 'Oxygen', sans-serif;
+    font-size: 14px;
+}
+.context-menu ul li a:hover{
+    text-decoration: underline;
+}
+.context-menu ul li a:active{
+    color: var(--accent-color);
+}
+.context-menu ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+}
+
+.context-menu ul li:last-child {
+    border-bottom: none;
 }
 .search-bars{
     font-family: Oxygen;
@@ -114,14 +148,32 @@ body > * {
 }
 
 
+.floating-options-bar{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    z-index: 1000;
+    max-height: calc(100vh - 40px);
+    overflow-y: hidden;
+}
+#livetrack{
+    background-color: #F1F4F3;
+}
+#livetrack img{
+    width: 50%;
+    /* Note: backdrop-filter has minimal browser support */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
 
 /*  Options */
 .options{
-    position: fixed;
-    align-self: self-end;
-    right: 0;
-    padding: 20px 10px;
-    margin-right: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -139,7 +191,7 @@ body > * {
     border-radius: 75px;
 }
 
-.options > .icons{
+.collapsible-options > .icons{
     visibility: hidden;
     transform: translateY(500%);
     visibility: hidden;
@@ -148,7 +200,12 @@ body > * {
     transform 0.3s ease-in-out,
     visibility 0.3s ease-in-out;
 }
-
+.icons > img  {
+    width: 30px;
+}
+.icons:last-child > img{
+    width: 8px;
+}
 .options > .icons:last-child{
     visibility: visible;
     transform: translateX(0px);
@@ -158,4 +215,58 @@ body > * {
   opacity: 1;
   transform: translateY(0);
   visibility: visible;
+}
+
+/* ======================== */
+/* 3D NAVIGATION STYLES     */
+/* ======================== */
+#nav3dPanel {
+	animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+	from {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+#nav3dPanel button:hover {
+	background: #ff5555 !important;
+	transition: all 0.2s ease;
+}
+
+#nav3dPanel button:active {
+	transform: scale(0.98);
+}
+
+/* ======================== */
+/* 3D NAVIGATION STYLES     */
+/* ======================== */
+#nav3dPanel {
+	animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+	from {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+#nav3dPanel button:hover {
+	background: #ff5555 !important;
+	transition: all 0.2s ease;
+}
+
+#nav3dPanel button:active {
+	transform: scale(0.98);
 }

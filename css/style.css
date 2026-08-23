@@ -11,8 +11,9 @@ body{
 .call2action{
     position: absolute;
     /* width: 300px; */
-    width: 19.53125vw;
     height: 70px;
+    padding: 0px 20px;
+
     margin-top: 71vh;
     text-align: center;
     display: flex;
@@ -27,6 +28,7 @@ body{
 }
 .leftbox-hs{
     width: 50vw;
+    font-size: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -62,11 +64,51 @@ body{
     justify-content: center;
     align-items: center;
 }
-.logo-hs > img {
-    height: 53.9dvh;
-}
+
 .leftbox-hs, .rightbox-hs{
     display: flex;
     justify-content: center;
     /* flex: none; */
+}
+
+@media (orientation: landscape) {
+    .logo-hs > img {
+        height: 53.9dvh;
+    }    
+}
+@media (orientation: portrait) {
+    .logo-hs > img {
+        height: 30dvh;
+    }
+    .logo-hs{
+        height: fit-content;
+    }
+    .hero-section{
+        padding-top: 25%;
+        height: 80dvh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background: url(./../assets/images/other/bg-curve-mobile.svg);
+        background-size: 100% auto;  /* full width, natural height */
+        background-repeat: no-repeat;
+        background-position: top center;    
+    }
+    .call2action{
+        margin: 0;
+        position: relative;
+        order: 2;
+    }
+    .leftbox-hs{
+        margin-top: 70px;
+        order: 1;
+        height: auto;
+        height: 100px;
+    }
+    .rightbox-hs{
+        height: auto;
+        width: 100%;
+        /* display: none; */
+        background: none;
+    }
 }

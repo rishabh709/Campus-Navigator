@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Location Viewer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v10.1.0/ol.css" />
+    <script src="https://cdn.jsdelivr.net/npm/ol@v10.1.0/dist/ol.js"></script>
+    <script src="https://unpkg.com/ol-mapbox-style@12.1.1/dist/olms.js"></script>
+    <script src="https://cdn.socket.io/4.8.0/socket.io.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Oxygen, sans-serif;
+            background: #f5f5f5;
+        }
+        #map {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+        }
+        #status-box {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+            font-size: 14px;
+            min-width: 250px;
+        }
+        #status-box h3 {
+            color: #46bd4a;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        #status-text {
+            color: #666;
+            margin-bottom: 10px;
+        }
+        #stop-btn {
+            width: 100%;
+            padding: 10px;
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        #stop-btn:hover {
+            background: #ff5252;
+        }
+        .error {
+            background: #fee;
+            border: 1px solid #fcc;
+            color: #c33;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+        .success {
+            background: #efe;
+            border: 1px solid #cfc;
+            color: #3c3;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div id="status-box">
+        <h3>Live Location Viewer</h3>
+        <div id="status-text">Loading...</div>
+        <button id="stop-btn" style="display: none;">Stop Viewing</button>
+    </div>
+
+    <script>
+        (function () {
+            // const SERVER_URL = 'http://localhost:3000';
+            const SERVER_URL = 'https://loud-showers-cut.loca.lt/';
+            const statusBox = document.getElementById('status-box');
+            const statusText = document.getElementById('status-text');
+            const stopBtn = document.getElementById('stop-btn');
+
+            // Simple map initialisation (viewer self-contained)
+            const view = new ol.View({
+                center: ol.proj.fromLonLat([79.53084932512772, 17.983676053176477]),
+                zoom: 18,
+                minZoom: 3,
+            });
+            const map = new ol.Map({
+                target: 'map',
+                layers: [
+                    new ol.layer.Tile({
+                        source: new ol.source.OSM(),
+                    }),
+                ],
+                view,
+            });
+
+            // viewer marker layer
+            let viewerMarkerLayer = null;
+
+            function setStatus(message, type = 'info') {
+                if (type === 'error') {
+                    statusText.innerHTML = `<div class="error">${message}</div>`;
+                } else if (type === 'success') {
+                    statusText.innerHTML = `<div class="success">${message}</div>`;
+                } else {
+                    statusText.innerHTML = `<p>${message}</p>`;
+                }
+            }
+
+            function getTokenFromURL() {
+                const params = new URLSearchParams(window.location.search);
+                return params.get('token');
+            }
+
+            let socket = null;
+
+            function connectAndJoin(token) {
+                if (!token) {
+                    setStatus('No share token provided in URL.', 'error');
+                    return;
+                }
+                setStatus('Connecting to shared location...', 'info');
+
+                try {
+                    socket = io(SERVER_URL, { auth: { token } });
+                } catch (e) {
+                    setStatus('Socket.IO not available or server URL invalid.', 'error');
+                    console.error(e);
+                    return;
+                }
+
+                socket.on('connect', () => {
+                    setStatus('Connected! Waiting for position...', 'success');
+                    stopBtn.style.display = 'block';
+                });
+
+                socket.on('connect_error', (err) => {
+                    console.error('connect_error', err);
+                    setStatus('Connection error: ' + (err.message || err), 'error');
+                });
+
+                socket.on('position', (data) => {
+                    if (!data || typeof data.lon !== 'number' || typeof data.lat !== 'number') return;
+                    setStatus('Receiving live location updates', 'success');
+                    updateViewerMarker(data.lon, data.lat);
+                });
+
+                socket.on('disconnect', () => {
+                    setStatus('Disconnected from share.', 'error');
+                });
+            }
+
+            function updateViewerMarker(lon, lat) {
+                const coords = ol.proj.fromLonLat([lon, lat]);
+                if (viewerMarkerLayer) map.removeLayer(viewerMarkerLayer);
+                const feat = new ol.Feature({ geometry: new ol.geom.Point(coords) });
+                viewerMarkerLayer = new ol.layer.Vector({
+                    source: new ol.source.Vector({ features: [feat] }),
+                    style: new ol.style.Style({
+                        image: new ol.style.Circle({
+                            radius: 10,
+                            fill: new ol.style.Fill({ color: '#ff5c5c' }),
+                            stroke: new ol.style.Stroke({ color: '#fff', width: 2 }),
+                        }),
+                    }),
+                    zIndex: 9999,
+                });
+                map.addLayer(viewerMarkerLayer);
+                // animate to location
+                try {
+                    view.animate({ center: coords, duration: 700, easing: ol.easing.easeOut });
+                } catch (e) {
+                    view.setCenter(coords);
+                }
+            }
+
+            stopBtn.addEventListener('click', () => {
+                if (socket) socket.disconnect();
+                setStatus('Stopped viewing.', 'info');
+                stopBtn.style.display = 'none';
+            });
+
+            // Start connect flow
+            const token = getTokenFromURL();
+            connectAndJoin(token);
+        })();
+    </script>
+</body>
+</html>

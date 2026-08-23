@@ -1,45 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up</title>
-    <link  rel="stylesheet" href="/map/css/login.css">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet" href="/map/css/fonts.css">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/map/css/login.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/map/css/fonts.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
 
-</head>
-<body>
+  <body>
     <div class="main">
-       <div class="con">
+      <div class="con">
         <div class="content">
-            <div class="upper">
-                <div class="logo"><img src="/assets/images/logo/logo-black.svg"></div>
-                <h3 class="title">NITW Campus Navigator</h3>
-                <div class="link"><a href="login.html">Log-in</a> | <a href="signup.html">Sign-up</a></div>
+          <div class="upper">
+            <div class="logo">
+              <img src="/assets/images/logo/logo-dark.svg" />
             </div>
-            <div class="lower">
-                <div class="inp">
-                    <label for="mail">Email id</label>
-                    <input type="email" id="mail" placeholder="Enter Email">
+            <h3 class="title">NITW Campus Navigator</h3>
+            <div class="link">
+              <a href="login.html">Log-in</a> |
+              <a href="signup.html">Sign-up</a>
+            </div>
+          </div>
 
-                </div>
-                  <div class="inp">
-                    <label for="psd">Enter Password</label>
-                    <input type="password" id="psd" placeholder="Enter Password">
-                    
-                </div>
-                <div class="for">
-                    <a>Forget Password</a>
-                </div>
+          <div class="lower">
+            <div class="inp">
+              <label for="mail">Email id</label>
+              <input type="email" id="mail" placeholder="Enter Email" />
             </div>
+
+            <div class="inp">
+              <label for="psd">Enter Password</label>
+              <input type="password" id="psd" placeholder="Enter Password" />
+            </div>
+
+            <div class="for">
+              <a>Forget Password</a>
+            </div>
+          </div>
         </div>
-       
-      </div>  
-       <div class="btn">
-            <button type="submit" class="login">Sign Up</button>
-        </div> 
+      </div>
+
+      <button type="submit" class="login-btn" id="signupBtn">Sign Up</button>
     </div>
-</body>
+
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
+      import {
+        getAuth,
+        createUserWithEmailAndPassword,
+      } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-auth.js";
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyDsVYPD6iOXMOCb2G_Vs3UhKoJEM0aXdSg",
+        authDomain: "campus-navigator-4f8d8.firebaseapp.com",
+        projectId: "campus-navigator-4f8d8",
+        storageBucket: "campus-navigator-4f8d8.firebasestorage.app",
+        messagingSenderId: "653967625720",
+        appId: "1:653967625720:web:921bc054b56fb52f179a0d",
+        measurementId: "G-G16C635WF9",
+      };
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+
+      document.getElementById("signupBtn").addEventListener("click", () => {
+        const email = document.getElementById("mail").value;
+        const password = document.getElementById("psd").value;
+
+        createUserWithEmailAndPassword(auth, email, password)
+          .then((userCredential) => {
+            alert("Account created successfully!");
+            window.location.href = "login.html";
+          })
+          .catch((error) => alert(error.message));
+      });
+    </script>
+  </body>
 </html>

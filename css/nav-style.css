@@ -13,7 +13,7 @@
     width: 100vw;
     
 }
-.nav > * {
+.left-nav, .right-nav, .mid-nav {
     text-align: center;
     width: 30%;
 }
@@ -97,14 +97,36 @@ input::placeholder{
 .nav .contact {
     background-color:var(--highligh-bg-color);
     padding: 8px;
-    width: 110px;
+    width: 100px;
     /* height: 40px; */
     
     text-align: center;
+    border-radius: 7px;
 
 }
 
 .logo{
     font-family:oxyzen ;
     
+}
+@media (orientation: landscape) {
+    
+}
+
+@media (orientation: portrait) {
+    .nav{
+        flex-wrap: wrap;
+    }
+    .left-nav{
+        order: 0;
+    }
+    .mid-nav{
+        width: 80%;
+        order: 2;
+    }
+    .right-nav{
+        width: 40%;
+        order: 1;
+        margin-top: 10px;
+    }
 }
